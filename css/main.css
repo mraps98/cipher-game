@@ -1,0 +1,122 @@
+:root{
+    /* Colors */
+    --bodyBackgroundColor:#040C15;
+    --boxBorderColor:blue;
+    --boxBackgroundColor:black;
+    --boxLetterColor:orange;
+    --boxPhraseColor:white;
+    --boxBackgroundColorHover:orange;
+    --boxLetterColorHover:white;
+    --boxPhraseColorHover:black;
+
+    /* Fonts */
+    --mainFontFamily:"CopperPlate Gothic", monospace;
+    --titleSize:300%;
+    --subTitleSize:200%;
+    --menuItemSize:200%;
+    --footerFontSize:130%;
+    --questionSize:100%;
+    --answerSize:200%;
+    --levelFontSize:180%;
+
+    /* Dimensions */
+    --verticalBoxMargin:2%;
+    --verticalLevelMargin:2%;
+}
+body{
+    background-color: var(--bodyBackgroundColor);
+    font-family:var(--mainFontFamily);
+    height:100%;
+}
+#title{
+    font-size:var(--titleSize);
+    text-align:center;
+    color:var(--boxLetterColor);
+}
+#subTitle{
+    font-size:var(--subTitleSize);
+    text-align:center;
+    color:var(--boxLetterColor);
+}
+#mainMenu{
+    margin:5% 0;
+}
+.menuItem{
+    width:40%;
+    margin:2% auto;
+}
+.boxLetter{
+    color: var(--boxLetterColor);
+}
+.boxPhrase{
+    color: var(--boxPhraseColor);
+}
+.box{
+    border: 3px solid var(--boxBorderColor);
+    background-color: var(--boxBackgroundColor);
+    border-radius:30%;
+    padding:2% 5%;
+    font-size:var(--menuItemSize);
+    text-align:center;
+}
+.box:hover{
+    cursor:pointer;
+    background-color:var(--boxBackgroundColorHover);
+}
+.box:hover .boxLetter{
+    color:var(--boxLetterColorHover);
+}
+.box:hover .boxPhrase{
+    color:var(--boxPhraseColorHover);
+}
+.center{
+    margin:auto;
+}
+
+#footerText{
+    width:25%;
+    color:var(--boxBorderColor);
+    font-size: var(--footerFontSize);
+}
+
+/* Styles for difference */
+.information{
+    margin:var(--verticalBoxMargin) auto;
+}
+
+/* Styles for Game */
+#gameScreen{
+    display:grid;
+    grid-template-columns:8fr 2fr;
+}
+#col1{
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+}
+#mainLogo{
+    height:100%;
+    width:50%;
+    margin:auto;
+}
+#answerOptions{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+#question{
+    margin:var(--verticalBoxMargin) 0;
+}
+.answerOption{
+    margin:var(--verticalBoxMargin) 0;
+}
+.level{
+    color:var(--boxLetterColor);
+    margin: var(--verticalLevelMargin) 0;
+    font-size:var(--levelFontSize);
+}
+.level:nth-of-type(5n-4){
+    color:var(--boxPhraseColor);
+}
+.currentLevel{
+    background-color: var(--boxLetterColor);
+    color:var(--boxPhraseColorHover);
+}
