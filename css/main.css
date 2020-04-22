@@ -11,13 +11,13 @@
 
     /* Fonts */
     --mainFontFamily:"CopperPlate Gothic", monospace;
-    --titleSize:300%;
-    --subTitleSize:200%;
-    --menuItemSize:200%;
-    --footerFontSize:130%;
-    --questionSize:100%;
-    --answerSize:200%;
-    --levelFontSize:180%;
+    --titleSize:3rem;
+    --subTitleSize:2rem;
+    --menuItemSize:2rem;
+    --footerFontSize:1.3rem;
+    --questionSize:1rem;
+    --answerSize:2rem%;
+    --levelFontSize:1rem%;
 
     /* Dimensions */
     --verticalBoxMargin:2%;
@@ -120,3 +120,26 @@ body{
     background-color: var(--boxLetterColor);
     color:var(--boxPhraseColorHover);
 }
+
+/* Responsive Fonts */
+@media screen and (max-width: 680px){
+    html{
+        font-size:10px;
+    }
+}
+@media screen and (max-width: 440px){
+    html{
+        font-size:8px;
+    }
+}
+@media screen and (max-width: 342px){
+    html{
+        font-size:5px;
+    }
+}
+@media screen and (max-width: 216px){
+    html{
+        font-size:3px;
+    }
+}
+
