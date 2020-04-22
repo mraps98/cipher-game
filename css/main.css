@@ -92,6 +92,7 @@ body{
 #col1{
     display:grid;
     grid-template-rows: 1fr 1fr;
+    max-height: 100vh;
 }
 #mainLogo{
     height:100%;
